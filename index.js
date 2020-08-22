@@ -16,5 +16,5 @@ class Formatter {
   }
 }
 
-let soma  = Formatter.sanitize('I am the one');
+let soma  = Formatter.titleize('I am the one');
 console.log(soma);
