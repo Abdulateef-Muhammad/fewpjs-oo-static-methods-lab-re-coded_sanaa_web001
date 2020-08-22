@@ -10,11 +10,11 @@ class Formatter {
 
   static titleize(string) {
     let preps = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
-    return string.split(' ').map(
+    return this.capitalize(string.split(' ').map(
       function(word) {
         return !preps.includes(word)? Formatter.capitalize(word): word;
       }
-    ).join(' ');
+    ).join(' '));
   }
 }
 
