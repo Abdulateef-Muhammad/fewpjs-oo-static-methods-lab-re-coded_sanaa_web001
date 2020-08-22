@@ -12,7 +12,7 @@ class Formatter {
     let preps = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     return string.split(' ').map(
       function(word) {
-        return !preps.includes(word)? this.capitalize(word): word;
+        return !preps.includes(word)? Formatter.capitalize(word): word;
       }
     );
   }
