@@ -11,7 +11,9 @@ class Formatter {
   static titleize(string) {
     let preps = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
     return string.split(' ').map(
-      word => !preps.includes(word)? this.capitalize(word): word;
+      function(word) {
+        return !preps.includes(word)? this.capitalize(word): word;
+      }
     );
   }
 }
