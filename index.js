@@ -14,7 +14,7 @@ class Formatter {
       function(word) {
         return !preps.includes(word)? Formatter.capitalize(word): word;
       }
-    );
+    ).join(' ');
   }
 }
 
